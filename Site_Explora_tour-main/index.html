@@ -16,24 +16,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css">
 
+        <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito+Sans:ital,wght@0,700;0,800;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
 
 </head>
 
 <body>
 
     <!-- =================== NAVBAR =================== -->
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i> Itabuna, Bahia, Brasil</small>
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i> +55 73 98843-3532</small>
+                        <small class="text-light"><i class="fa fa-envelope-open me-2"></i> systen3@gmail.com</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100090629080788"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/in/felipe-souza-746ab8142/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/liipedesigner/"><i class="fab fa-instagram fw-normal"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
 
-    <!-- =================== HERO SECTION =================== -->
+          <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
-
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i> Explore Tour </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#sobre" class="nav-item nav-link">Sobre</a>
+                    <a href="#servico" class="nav-item nav-link">Serviços</a>
+                    <a href="#promocao" class="nav-item nav-link">Promoções</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinos</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#destino" class="dropdown-item">Destino</a>
+                            <a href="#reserva" class="dropdown-item">Reserva</a>
+                            <a href="#guia" class="dropdown-item">Guia de Viagem</a>
+                            <a href="#testemunha" class="dropdown-item">Testemunhos</a>
+                           
+                        </div>
+                    </div>
+                    <a href="#contato" class="nav-item nav-link">Contato</a>
+                </div>
+                <a href="" class="btn btn-primary rounded-pill py-2 px-4">Registrar</a>
+            </div>
+        </nav>
 
         <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-
             <div class="container py-5">
                 <div class="row justify-content-center py-5">
                     <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
@@ -57,6 +107,7 @@
             </div>
         </div>
     </div>
+    <!-- Navbar & Hero End -->
 
 
 
@@ -72,7 +123,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h6 class="section-title bg-white text-primary pe-3">Sobre nós </h6>
+                    <h6 class="section-title bg-white text-primary pe-3" id="sobre">Sobre nós </h6>
                     <h1 class="mb-4">Bem-vindo ao <span class="text-primary">Explore Tour</span></h1>
 
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur
@@ -105,7 +156,7 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Serviços</h6>
+                <h6 class="section-title bg-white text-center text-primary px-3" id="servico">Serviços</h6>
                 <h1 class="mb-5">Outros serviços</h1>
             </div>
             <div class="row g-4">
@@ -209,7 +260,7 @@
   <div class="container-xxl py-5 destination">
     <div class="container">
         <div class="text-center">
-            <h6 class="section-title bg-white text-center text-primary px-3">
+            <h6 class="section-title bg-white text-center text-primary px-3" id="destino">
                 Destinos
             </h6>
             <h1 class="mb-5">Destinos Populares</h1>
@@ -258,7 +309,7 @@
     </div>
   </div>
   
-  <!-- ================pacotes section ======================== -->
+  <!-- ================Promocoes section ======================== -->
 
   <div class="container-xxl py-5">
 
@@ -266,7 +317,7 @@
 
         <div class="text-center">
 
-            <h6 class="section-title bg-white text-center text-primary px-3"> Pacotes</h6>
+            <h6 class="section-title bg-white text-center text-primary px-3" id="promocao"> Promoções</h6>
             <h1 class="mb-5">Pacotes Incríveis</h1>
         </div>
 
@@ -393,10 +444,401 @@
     </div>
   </div>
 
-    <!--jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <!--Bootstrap js link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+ <!--================== Reserva =======================-->
+
+ <div class="container-xxl py-5">
+    <div class="container">
+        <div class="booking p-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6 text-white">
+                    <h6 class="text-write text-uppercase" id="reserva">Reservas</h6>
+                    <h1 class="text-write mb-4">Marcação online</h1>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga adipisci quos, ducimus, nihil possimus soluta asperiores impedit accusamus quam repellat eius, iste odio quisquam totam ab quidem exercitationem vel?</p>
+                    <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos sit corrupti esse praesentium eaque, perspiciatis magnam est mollitia eius dicta quasi! Iusto sint qui, dolor maiores corrupti nisi facere ab!</p>
+                    <a href="" class="btn btn-outline-light py-3 px-5 mt-2">Mais Informações</a>
+                </div>
+                <div class="col-md-6 text-white">
+                    <h1 class="text-write mb-4">Seu Nome</h1>
+                    <form action="">
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-transparent" id="name" placeholder="Seu Nome">
+                                    <label for="name">Seu Nome</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-transparent" id="email" placeholder="Seu Nome">
+                                    <label for="name">Seu Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating" id="date3">
+                                    <input type="text" class="form-control bg-transparent" id="datetime" placeholder="Seu Nome">
+                                    <label for="datetime">Data e Horário</label>
+                                </div>
+                            </div>
+
+                             <!--select box-->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select name="" id="select1" class="form-select bg-transparent">
+                                        <option value="1">Destino 1</option>
+                                        <option value="2">Destino 2</option>
+                                        <option value="3">Destino 3</option>
+                                    </select>
+                                    <label for="select1">Destinos</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-transparent" placeholder="Pedido especial" id="message" style="height: 100px;"></textarea>
+                                    <label for="message">Pedido Especial</label>
+                                </div>
+                            </div>
+
+                             <!--buttom-->
+
+                             <div class="col-12">
+                                <button class="btn btn-outline-light w-100 py-3" type="submit">Agende agora</button>
+                             </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ </div>
+
+
+<!--=======================  inicio do processo ============================-->
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center pb-4">
+            <h6 class="section-title bg-white text-center text-primary px-3">Processo</h6>
+            <h1 class="mb-5">Passos fáceis</h1>
+        </div>
+
+        <div class="row gy-5 gx-4 justify-content-center">
+
+            <div class="col-lg-4 col-sm-6 text-center pt-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                    </div>
+                    <h5 class="mt-4">Escolha um destino</h5>
+                    <hr class="w-25 mx-auto bg-primary mt-0">
+
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi officiis sed explicabo totam earum.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center pt-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <i class="fa fa-globe fa-3x text-white"></i>
+                    </div>
+                    <h5 class="mt-4">Escolha um destino</h5>
+                    <hr class="w-25 mx-auto bg-primary mt-0">
+
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi officiis sed explicabo totam earum.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center pt-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <i class="fa fa-plane fa-3x text-white"></i>
+                    </div>
+                    <h5 class="mt-4">Escolha um destino</h5>
+                    <hr class="w-25 mx-auto bg-primary mt-0">
+
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi officiis sed explicabo totam earum.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--======================== equipe ==========================-->
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3" id="guia">Guia de Viagem</h6>
+            <h1 class="mb-5">Conheça nosso guia</h1>
+        </div>
+        <div class="row g-4">
+
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="/img/team.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-square mx-1">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Arnaldo Alves</h5>
+                        <small>Destino</small>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="/img/team.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a href="https://www.facebook.com/profile.php?id=100090629080788" class="btn btn-square mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-square mx-1">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Felipe De Souza</h5>
+                        <small>Destino</small>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="/img/team.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a href="https://www.facebook.com/profile.php?id=100090629080788" class="btn btn-square mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-square mx-1">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">André de Souza</h5>
+                        <small>Destino</small>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="/img/team.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a href="https://www.facebook.com/profile.php?id=100090629080788" class="btn btn-square mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-square mx-1">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Diego de Souza</h5>
+                        <small>Destino</small>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--======================== testemunha section ==========================-->
+
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3" id="testemunha">Testemunha</h6>
+            <h1 class="mb-5">Que nossos Clientes Dizem!!</h1>
+        </div>
+
+        <div class="owl-carousel testimonial-carousel position-relative">
+
+            <div class="testimonial-item bg-white text-center border p-4">
+                <img src="/img/testemunha.jpg" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"  style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Fernanda</h5>
+                <p>Rio de Janeiro, BR</p>
+                <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+             <div class="testimonial-item bg-white text-center border p-4">
+                <img src="/img/testemunha2.jpg" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"  style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Felipe</h5>
+                <p>Bahia, BR</p>
+                <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+             <div class="testimonial-item bg-white text-center border p-4">
+                <img src="/img/testemunha3.jpg" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"  style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Evanilto</h5>
+                <p>São Paulo, BR</p>
+                <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+             <div class="testimonial-item bg-white text-center border p-4">
+                <img src="/img/testemunha4.jpg" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"  style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Fernanda</h5>
+                <p>São Paulo, BR</p>
+                <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+
+
+             
+            </div>
+    </div>
+</div>   
+
+
+<!--======================== footer section ==========================-->
+
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Empresa</h4>
+                    <a href="" class="btn btn-link">Sobre nós</a>
+                    <a href="" class="btn btn-link">Contato</a>
+                    <a href="" class="btn btn-link">Política de Privacidade</a>
+                    <a href="" class="btn btn-link">Ajuda</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3" id="contato">Contato</h4>
+                    <p class="mb-2"> <i class="fa fa-map-marker-alt me-3"> </i> Itabuna, Bahia, BR</p>
+                    <p class="mb-2"> <i class="fa fa-phone-alt me-3"> </i>+55 73 98843-3532 </p>
+                    <p class="mb-2"> <i class="fa fa-envelope me-3">   </i> systen3@gmail.com</p>
+                    <!--icones rede sociais-->
+
+                    <div class="d-flex pt-2">
+                        <a href="https://www.facebook.com/profile.php?id=100090629080788" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/felipe-souza-746ab8142/" class="btn btn-outline-light btn-social">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Galeria</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img src="/img/package1.jpg" alt="" class="img-fluid bg-light p-1">
+                        </div>
+                        <div class="col-4">
+                            <img src="/img/package2.jpg" alt="" class="img-fluid bg-light p-1">
+                        </div>
+                        <div class="col-4">
+                            <img src="/img/package3.jpg" alt="" class="img-fluid bg-light p-1">
+                        </div>
+                        <div class="col-4">
+                            <img src="/img/package1.jpg" alt="" class="img-fluid bg-light p-1">
+                        </div>
+                        <div class="col-4">
+                            <img src="/img/package2.jpg" alt="" class="img-fluid bg-light p-1">
+                        </div>
+                        <div class="col-4">
+                            <img src="/img/package3.jpg" alt="" class="img-fluid bg-light p-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Noticias</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input type="text" class="form-control border-primary w-100 py-3 ps-4 pe-5" placeholder="Seu Email">
+                        <button class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" type="button">Inscrever-se</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+          <!-- copyright-->
+
+          <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <a href="" class="border-bottom">Felipe Souza</a> Todos os direitos reservados</div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="" class="">Home</a>
+                            <a href="" class="">Cookies</a>
+                            <a href="" class="">Ajuda</a>
+                            <a href="" class="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+    </div>
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <script src="lib/tempusdominus/js/moment.min.js"></script>
+   <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+   <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
     <!--js file-->
     <script src="./js/main.js"></script>
 </body>
