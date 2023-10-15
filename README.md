@@ -34,6 +34,8 @@ Criar as relações e cardinalidades entre as tabelas do modelo do banco. Criar 
 
 Criar o modelo do sistema (Classes) em UML e Java 
 
+![image](https://github.com/FelipeSysten/Site_Explora_tour/assets/76599815/fbb59564-b8e8-4ea4-b7f5-d34efa4fc668)
+
 ## Back-end 
 
 Usando os conceitos da orientação a objetos em Java, criar um projeto do tipo console da agencia de viagens, aplicando o CRUD (Create, Read, Update, Delete) para todas as tabelas de seu modelo de banco de dados. Para a atividade vamos usar classes Java, JDBC e MySql 
