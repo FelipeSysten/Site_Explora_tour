@@ -21,7 +21,12 @@ As páginas devem ser responsivas ou adaptáveis.
 
 ##  Modelagem de dados
 
-Criar o modelo conceitual e lógico do banco de dados, usando uma ferramenta de modelagem de dados (BRmodelo). Criar as relações e cardinalidades entre as tabelas do modelo do banco. Criar o modelo físico (tabelas e relações) usando SQL. Criar o modelo do sistema (Classes) em UML e Java 
+Criar o modelo conceitual e lógico do banco de dados, usando uma ferramenta de modelagem de dados (BRmodelo). 
+
+![image](https://github.com/FelipeSysten/Site_Explora_tour/assets/76599815/7dc4257b-ff01-4248-adf5-8776115741cd)
+
+
+Criar as relações e cardinalidades entre as tabelas do modelo do banco. Criar o modelo físico (tabelas e relações) usando SQL. Criar o modelo do sistema (Classes) em UML e Java 
 
 ## Back-end 
 
