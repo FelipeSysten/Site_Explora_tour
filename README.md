@@ -36,8 +36,66 @@ Criar o modelo do sistema (Classes) em UML e Java
 
 ![image](https://github.com/FelipeSysten/Site_Explora_tour/assets/76599815/fbb59564-b8e8-4ea4-b7f5-d34efa4fc668)
 
+
 ## Back-end 
 
 Usando os conceitos da orientação a objetos em Java, criar um projeto do tipo console da agencia de viagens, aplicando o CRUD (Create, Read, Update, Delete) para todas as tabelas de seu modelo de banco de dados. Para a atividade vamos usar classes Java, JDBC e MySql 
 
 ![image](https://github.com/FelipeSysten/Site_Explora_tour/assets/76599815/4670d649-9da7-4ce5-9441-25fa5f121c6f)
+
+
+## Este menu em Java representa um sistema simples de gestão de viagens com operações básicas para Destinos, Usuários e Reservas. Aqui está uma breve descrição:
+
+## Cadastrar Destino:
+
+Permite ao usuário cadastrar um novo destino, fornecendo o nome e a descrição.
+
+## Listar Destinos:
+
+Mostra uma lista de todos os destinos cadastrados, exibindo seus IDs, nomes e descrições.
+
+## Atualizar Destino:
+
+Permite a atualização de informações de um destino existente, identificado pelo ID.
+
+## Excluir Destino:
+
+Remove um destino existente com base no ID fornecido.
+
+## Cadastrar Usuário:
+
+Permite ao usuário cadastrar um novo usuário, fornecendo nome, CPF, email e telefone.
+
+## Listar Usuários:
+
+Mostra uma lista de todos os usuários cadastrados, exibindo seus IDs, nomes, CPFs, emails e telefones.
+
+## Atualizar Usuário:
+
+Permite a atualização de informações de um usuário existente, identificado pelo ID.
+
+## Excluir Usuário:
+
+Remove um usuário existente com base no ID fornecido.
+
+## Cadastrar Reserva:
+
+Permite ao usuário cadastrar uma nova reserva, fornecendo o ID do destino, o ID do usuário, a data da reserva e o status.
+
+## Listar Reservas:
+
+Mostra uma lista de todas as reservas cadastradas, exibindo seus IDs, destinos associados, usuários associados, datas e status.
+
+## Atualizar Reserva:
+
+Permite a atualização de informações de uma reserva existente, identificada pelo ID.
+
+## Excluir Reserva:
+
+Remove uma reserva existente com base no ID fornecido.
+
+## Sair:
+
+Encerra o programa.
+
+Esse menu utiliza classes DAO (Data Access Object) para interagir com o banco de dados, por trás das implementações destinoDAO, usuarioDAO, e reservaDAO. O sistema continua em execução até que o usuário opte por sair. Este é um esboço básico e você pode estendê-lo ou modificá-lo conforme necessário para se adequar às especificações do seu sistema.
