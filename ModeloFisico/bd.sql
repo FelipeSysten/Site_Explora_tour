@@ -19,7 +19,7 @@ CREATE TABLE destinos (
 
 
 CREATE TABLE reservas (
-    idReserva INT COMMENT 'Identificador Unico da reserva',
+    idReserva INT AUTO_INCREMENT PRIMARY KEY COMMENT 'Identificador Unico da reserva',
     dataDestino DATETIME COMMENT 'Data da reserva',
     statusReserva VARCHAR(255) DEFAULT 'pendente' COMMENT 'Status da reserva(confirmada, pendente, cancelada, etc.)'
     idUsuario INT COMMENT 'Referente ao ID do usuario que fez a reserva' ,
